@@ -7,12 +7,35 @@
 --color6:  #F4F4FD;
 --color7: #E7E9FC;}
 
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     }
 
 /* *****  header****** */
+.container1 {
+    width: 1440;
+    /* height: 70px; */
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+
+}
 .header-navi {
+    display: flex;
 }
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -23,14 +46,20 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 .half-logo {
     color: var(--color1);}
 .header:is(:hover, :focus){color: var(--color4);}
 
+.header {display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .header-item {
-    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;   
+    list-style-type: none; 
+    /* margin-right: 40px; */
 }
 
 .header-link:active {color: var(--color4);}
@@ -49,6 +78,9 @@ body {
     list-style: none; 
 }
 .header-addr-cont :is(:hover, :focus){color: var(--color4);}
+.header-addr-cont {
+    display: flex;
+}
 
 .header-cont {
     list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
@@ -66,16 +98,44 @@ body {
     list-style: none;
 }
 .header-link-cont:active {color: var(--color4);}
+.header-email {
+margin-left: 332px;
+}
+.header-tel {
+margin-left: 40px;
+}
+
+
 
 
 /* ****main*** */
+
+.container2 {
+    width: 1440px;
+    padding: 188px 473px;
+    background: var(--color1);
+}
+
+.container3 {
+    display: flex;
+    width: 1128px;
+    margin: 120px auto; 
+}
+.container4 {
+    width: 1440px;
+    padding: 120px 0;
+    background: var(--color6);
+    }
 .main-sect-1 {
-    background: var(--color1);}
+    text-align: center;
+    }
 .main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
-color: var(--color5);
+    max-width: 495px;
+    color: var(--color5);
+    margin-bottom: 48px;
 }
 .main-but:is(:hover, :focus) { 
     background: var(--color4);
@@ -85,13 +145,21 @@ color: var(--color5);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    /* justify-content: center; */
+    margin: 0 auto;
     background: var(--color3);
     color: var(--color5);
     cursor: pointer;
     }
     
 .main-skills-all {
-    list-style-type: none;    
+    list-style-type: none;  
+    display: flex; 
+    gap: 24px; 
+    /* margin: 120px 0; */
+}
+.main-skills-bloc {
+    width: 264px;
 }
 .main-skills {    
     font-weight: 500;
@@ -109,6 +177,11 @@ color: var(--color5);
     letter-spacing: 0.02em;
     color: var(--color2);
     }
+.what-doing {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}    
 .main-demonstr {
     font-weight: 700;
     font-size: 36px;
@@ -119,7 +192,7 @@ color: var(--color5);
     color: var(--color1);
     }
 .main-staff-all {
-    background: var(--color6);
+    
 }
 .main-staff {        
     font-weight: 700;
@@ -128,7 +201,13 @@ color: var(--color5);
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
     color: var(--color1);
+}
+.main-staff-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .main-staff-name { 
@@ -137,6 +216,7 @@ color: var(--color5);
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 32px;
     color: var(--color1);
     }
 
@@ -145,6 +225,8 @@ color: var(--color5);
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 8px;
+    margin-bottom: 32px;
     color: var(--color2);
     }
 
@@ -159,9 +241,12 @@ color: var(--color5);
   }
 
         /* *****footer***** */
-
-.footer {
+.container-footer {
+    padding: 100px 1020px 100px 156px;
     background: var(--color1);
+}
+.footer {
+   
 }
 
 .footer-logo {font-family: 'Raleway', sans-serif;
@@ -182,6 +267,8 @@ color: var(--color5);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
     color: var(--color7);
     }
 
@@ -235,3 +322,5 @@ color: var(--color5);
     color: var(--color2);
     /* text-decoration: none; */
     }
+
+    /* flex-boxes */
