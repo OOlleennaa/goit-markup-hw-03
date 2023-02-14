@@ -244,6 +244,7 @@ margin-left: 40px;
 .container-footer {
     padding: 100px 1020px 100px 156px;
     background: var(--color1);
+    /* margin-top: 120px; */
 }
 .footer {
    
@@ -280,6 +281,10 @@ margin-left: 40px;
 
 .pf-main {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 96px 0 72px;
     }
     
 .pf-main-but {
@@ -296,14 +301,21 @@ margin-left: 40px;
 }
 .pf-main-but:is(:hover, :focus){color: var(--color5); 
     background: var(--color4); 
+    border: 1px solid #E7E9FC;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pf-main-but {
     cursor: pointer;
 }
+.function-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 120px;
+}
 .pf-main-link {
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 .pf-main-funct :is(:hover, :focus){color: var(--color4);}
 .pf-main-funct {
@@ -311,14 +323,23 @@ margin-left: 40px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
     color: var(--color1);
     /* text-decoration: none; */
+    }
+    .function-title {
+    list-style-type: none;
+     padding-bottom: 32px;
+     margin-bottom: 48px;   
     }
     .pf-main-wherefunct :is(:hover, :focus){color: var(--color4);}
 .pf-main-wherefunct {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 16px;
     color: var(--color2);
     /* text-decoration: none; */
     }
