@@ -23,20 +23,22 @@ body {
     }
 
 /* *****  header****** */
-.container1 {
-    width: 1440;
-    /* height: 70px; */
+.container {
+    width: 1158px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+.header-container {
+    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
-    display: flex;
-    padding-left: 15px;
     align-items: center;
     border-bottom: 1px solid #E7E9FC;
-
 }
 .header-navi {
     display: flex;
+    /* margin-right: 76px; */
 }
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -47,7 +49,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 76px;
+    
 }
 .half-logo {
     color: var(--color1);}
@@ -56,6 +58,7 @@ body {
 .header {display: flex;
     align-items: center;
     gap: 40px;
+    margin-left: 76px;
 }
 
 .header-item {
@@ -81,11 +84,12 @@ body {
 .header-addr-cont :is(:hover, :focus){color: var(--color4);}
 .header-addr-cont {
     display: flex;
+    gap: 40px;
+    margin-left: 332px;
 }
 
 .header-cont {
-    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;   
+    list-style-type: none; 
 }
 .header-link-cont:is(:hover, :focus){ var(--color4);}
 
@@ -99,35 +103,18 @@ body {
     list-style: none;
 }
 .header-link-cont:active {color: var(--color4);}
-.header-email {
-margin-left: 332px;
-}
-.header-tel {
-margin-left: 40px;
-}
-
-
 
 
 /* ****main*** */
 
-.container2 {
-    width: 1440px;
-    padding: 188px 473px;
-    background: var(--color1);
-}
 
-.container3 {
-    display: flex;
-    width: 1128px;
-    padding: 120px 156px; 
-}
-.container4 {
-    width: 1440px;
+.container-staff {
     padding: 120px 0;
     background: var(--color6);
     }
 .main-sect-1 {
+    padding: 188px 453px;    
+    background: var(--color1);
     text-align: center;
     }
 .main-title {
@@ -137,7 +124,7 @@ margin-left: 40px;
     max-width: 495px;
     color: var(--color5);
     margin-bottom: 48px;
-}
+   }
 .main-but:is(:hover, :focus) { 
     background: var(--color4);
 }
@@ -146,10 +133,9 @@ margin-left: 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    /* justify-content: center; */
     margin: 0 auto;
     background: var(--color3);
-    border: 1px solid #4D5AE5;);
+    border: 1px solid #4D5AE5;
     border-radius: 4px;
     color: var(--color5);
     cursor: pointer;
@@ -159,20 +145,19 @@ margin-left: 40px;
     list-style-type: none;  
     display: flex; 
     gap: 24px; 
-    justify-content: center;
-    /* margin: 120px 0; */
-}
+    padding: 120px 0; 
+    }
 .main-skills-bloc {
-    width: 264px;
-}
+    width: ((100%-24px*3)/4);
+    }
 .main-skills {    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color1);
-    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;   
+    list-style-type: none;
+    margin-bottom: 8px;  
     
 }
 .main-actions {     
@@ -181,8 +166,10 @@ margin-left: 40px;
     letter-spacing: 0.02em;
     color: var(--color2);
     }
+    
 .what-doing {
     display: flex;
+    justify-content: center;
     gap: 24px;
     margin-top: 72px;
 }    
@@ -195,8 +182,9 @@ margin-left: 40px;
     text-transform: capitalize;
     color: var(--color1);
     }
-.main-staff-all {
-    
+.staff-foto {
+    background: url(man-with-laptop-presenting-something.jpg);
+mix-blend-mode: normal;
 }
 .main-staff {        
     font-weight: 700;
@@ -213,6 +201,10 @@ margin-left: 40px;
     justify-content: center;
     gap: 24px;
 }
+.staff-name-proff {
+    padding: 32px 0;
+
+}
 
 .main-staff-name { 
     font-weight: 500;
@@ -220,7 +212,6 @@ margin-left: 40px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     color: var(--color1);
     }
 
@@ -230,7 +221,6 @@ margin-left: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 8px;
-    margin-bottom: 32px;
     color: var(--color2);
     }
 
@@ -239,17 +229,24 @@ margin-left: 40px;
     text-decoration: none;  
 }
 .not-see {
-    visibility: hidden;
-    pointer-events: none;
     position: absolute;
-  }
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+        
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+     }
 
         /* *****footer***** */
 .container-footer {
     padding: 100px 1020px 100px 156px;
     background: var(--color1);
-    /* margin-top: 120px; */
-}
+    }
 .footer {
    
 }
@@ -278,10 +275,6 @@ margin-left: 40px;
     }
 
     /* ********Portfolio*********** */
-/* .pf-main  :is(:hover, :focus){color: var(--color5); 
-    background: var(--color4);  */
-    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;} */ 
 
 .pf-main {
     list-style-type: none;
@@ -303,13 +296,13 @@ margin-left: 40px;
     line-height: 1.5;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--color3);
 }
 .pf-main-but:is(:hover, :focus){color: var(--color5); 
     background: var(--color4); 
-    
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+    }
 
 .pf-main-but {
     cursor: pointer;
@@ -317,37 +310,41 @@ margin-left: 40px;
 .function-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
+    }
+.function-title:last-child {
     margin-bottom: 120px;
-}
+      }
+
 .pf-main-link {
     text-decoration: none;
 }
+.funktwherefunct {
+    padding: 32px 0 32px 15px;
+    border-left: ;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)};
+
 .pf-main-funct :is(:hover, :focus){color: var(--color4);}
 .pf-main-funct {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    margin-left: 16px;
     color: var(--color1);
-    /* text-decoration: none; */
+    
     }
     .function-title {
     list-style-type: none;
-     padding-bottom: 32px;
-     margin-bottom: 48px;   
-    }
+     }
     .pf-main-wherefunct :is(:hover, :focus){color: var(--color4);}
 .pf-main-wherefunct {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 16px;
     color: var(--color2);
-    /* text-decoration: none; */
+    
     }
 
     /* flex-boxes */
