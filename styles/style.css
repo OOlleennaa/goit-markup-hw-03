@@ -29,12 +29,15 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     }
+.header-section {
+    border-bottom: 1px solid #E7E9FC;
+}
 .header-container {
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: center;
-    border-bottom: 1px solid #E7E9FC;
+    
 }
 .header-navi {
     display: flex;
@@ -80,12 +83,13 @@ body {
 
 .header-addr {
     list-style: none; 
+    margin-left: 332px;
 }
 .header-addr-cont :is(:hover, :focus){color: var(--color4);}
 .header-addr-cont {
     display: flex;
     gap: 40px;
-    margin-left: 332px;
+    
 }
 
 .header-cont {
@@ -113,7 +117,7 @@ body {
     background: var(--color6);
     }
 .main-sect-1 {
-    padding: 188px 453px;    
+    padding: 188px 0;    
     background: var(--color1);
     text-align: center;
     }
@@ -123,7 +127,7 @@ body {
     line-height: 60px;
     max-width: 495px;
     color: var(--color5);
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
    }
 .main-but:is(:hover, :focus) { 
     background: var(--color4);
@@ -134,18 +138,21 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
+    padding: 16px 32px;
     background: var(--color3);
     border: 1px solid #4D5AE5;
     border-radius: 4px;
     color: var(--color5);
     cursor: pointer;
     }
-    
+.section-skills {
+    padding: 120px 0; 
+}    
 .main-skills-all {
     list-style-type: none;  
     display: flex; 
     gap: 24px; 
-    padding: 120px 0; 
+    
     }
 .main-skills-bloc {
     width: ((100%-72px)/4);
@@ -172,7 +179,13 @@ body {
     justify-content: center;
     gap: 24px;
     margin-top: 72px;
-}    
+}  
+.what-doing-title {
+    width: ((100%-48px)/3);
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
+    background-blend-mode: soft-light, normal;
+    border: 1px solid #E7E9FC;
+}  
 .main-demonstr {
     font-weight: 700;
     font-size: 36px;
@@ -182,6 +195,14 @@ body {
     text-transform: capitalize;
     color: var(--color1);
     }
+
+.staff-title { 
+    width: ((100%-72px)/4);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .staff-foto {
     background: url(man-with-laptop-presenting-something.jpg);
 mix-blend-mode: normal;
@@ -242,11 +263,11 @@ mix-blend-mode: normal;
 
         /* *****footer***** */
 .container-footer {
-    padding: 100px 1020px 100px 156px;
-    background: var(--color1);
+    
     }
 .footer {
-   
+    padding: 100px 0;
+    background: var(--color1);
 }
 
 .footer-logo {font-family: 'Raleway', sans-serif;
@@ -273,25 +294,29 @@ mix-blend-mode: normal;
     }
 
     /* ********Portfolio*********** */
-
+.section-pf {
+    padding: 96px 0 120px 0;
+}
 .pf-main {
     list-style-type: none;
     display: flex;
     gap: 24px;
     justify-content: center;
-    margin: 96px 0 72px;
+    margin-bottom: 72px;
     }
     
 .pf-main-but {
     list-style-type: none; 
 }
-
-
 .pf-main-but {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     border-color: transparent;
@@ -311,9 +336,9 @@ mix-blend-mode: normal;
     column-gap: 24px;
     row-gap: 48px;
     }
-.function-title:last-child {
+/* .function-title:last-child {
     margin-bottom: 120px;
-      }
+      } */
 
 .pf-main-link {
     text-decoration: none;
@@ -329,14 +354,17 @@ mix-blend-mode: normal;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: var(--color1);
     
     }
     .function-title {
     list-style-type: none;
+    width: ((100%-48px)/3);
+    border: 1px solid #E7E9FC;
      }
     .pf-main-wherefunct :is(:hover, :focus){color: var(--color4);}
-.pf-main-wherefunct {
+    .pf-main-wherefunct {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
