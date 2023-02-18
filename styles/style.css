@@ -111,11 +111,6 @@ body {
 
 /* ****main*** */
 
-
-.container-staff {
-    padding: 120px 0;
-    background: var(--color6);
-    }
 .main-sect-1 {
     padding: 188px 0;    
     background: var(--color1);
@@ -155,7 +150,7 @@ body {
     
     }
 .main-skills-bloc {
-    width: ((100%-72px)/4);
+    width: ((100% - 72px) / 4);
     }
 .main-skills {    
     font-weight: 500;
@@ -173,7 +168,10 @@ body {
     letter-spacing: 0.02em;
     color: var(--color2);
     }
-    
+  
+.section-doing {
+    padding-bottom: 120px;
+}
 .what-doing {
     display: flex;
     justify-content: center;
@@ -181,7 +179,7 @@ body {
     margin-top: 72px;
 }  
 .what-doing-title {
-    width: ((100%-48px)/3);
+    width: ((100% - 48px) / 3);
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
     background-blend-mode: soft-light, normal;
     border: 1px solid #E7E9FC;
@@ -195,9 +193,13 @@ body {
     text-transform: capitalize;
     color: var(--color1);
     }
-
+    /* section class="main-staff-all" */
+.main-staff-all {
+    background: var(--color6) ;
+    padding: 120px 0;
+}
 .staff-title { 
-    width: ((100%-72px)/4);
+    width: ((100% - 72px) / 4);
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -346,6 +348,8 @@ mix-blend-mode: normal;
 .funktwherefunct {
     padding: 32px 0 32px 15px;
     background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    border-top: 0px;
     }
 .pf-main-funct:is(:hover, :focus){color: var(--color4);}
 .pf-main-funct {
@@ -359,8 +363,8 @@ mix-blend-mode: normal;
     }
     .function-title {
     list-style-type: none;
-    width: ((100%-48px)/3);
-    border: 1px solid #E7E9FC;
+    width: ((100% - 48px) / 3);
+    
      }
     .pf-main-wherefunct :is(:hover, :focus){color: var(--color4);}
     .pf-main-wherefunct {
